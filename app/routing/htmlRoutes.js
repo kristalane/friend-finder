@@ -5,7 +5,7 @@ var appDir = path.dirname(require.main.filename);
 module.exports = function(app) {
 
   // serve the home page
-  app.get("/", function(req, res) {
+  app.use("/", function(req, res) {
     res.sendFile(path.join(appDir, "app", "public", "home.html"));
   });
 

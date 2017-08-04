@@ -148,19 +148,16 @@
     <script>
     $("#submit").on("click", function(event) {
       event.preventDefault();
-      var selection = $'.select'
       var newFriend = {
         name: $("#name").val().trim(),
         image: $("#photo").val().trim(),
         scores: []
       };
 
-      // Question: What does this code do??
-      $.post("/api/new", newCharacter)
-      .done(function(data) {
-        console.log(data);
-        alert("Adding character...");
+      $.post("/api/friends", function (newFriend){
+          console.log(newFriend);
       });
+
     });
     </script>
   </body>

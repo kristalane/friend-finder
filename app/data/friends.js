@@ -1,6 +1,4 @@
 
-module.exports = friends
-
 var friend1 = {
   "name":"Tony",
   "photo": "http://vignette1.wikia.nocookie.net/suburgatory/images/5/52/Happy_face.jpg/revision/latest?cb=20120412051836",
@@ -19,3 +17,5 @@ var friend1 = {
 };
 
 var friends = [friend1];
+
+module.exports = friends;
