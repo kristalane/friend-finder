@@ -2,24 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Something</title>
-    <script src="https://code.jquery.com/jquery.js"></script>
+    <title>FriendFinder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   </head>
   <body>
-    It's alive!
-    <button onclick="test()">Click me</button>
-
-    <script>
-
-    function test(){
-      $.ajax({
-        url: "http://localhost:8080/api/friends",
-        method: "POST"
-      })
-      .done(function(data) {
-      console.log("response = " + JSON.stringify(data));
-      })
-    }
-    </script>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-3">Find a Friend!</h1>
+        <p class="lead">Answer some basic questions about your humanity, and see if there's a match!</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="/survey" role="button">Take Survey</a>
+        </p>
+      </div>
+    </div>
   </body>
 </html>
